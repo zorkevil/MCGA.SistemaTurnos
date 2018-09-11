@@ -2,7 +2,7 @@ html,body{
 	padding:0;
 	margin:0;
 	background:#fff;
-font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
 }
 body a{
     transition:0.5s all;
@@ -38,8 +38,7 @@ p{
 	margin:0;
 	padding:0;
 	letter-spacing:2px;
-font-family: 'Barlow Condensed', sans-serif;
-
+    font-family: 'Barlow Condensed', sans-serif;
 }
 ul{
 	margin:0;
@@ -57,10 +56,9 @@ ul{
 }
 .tit-clr{color:#fff;}
 .titl-bottom{padding-bottom:0px;}
-.banner-w3{background: url(../images/b1.jpg)no-repeat center;
+.banner-w3{
     background-size: cover;
-    min-height: 800px;
-	
+    min-height: 800px;	
 }
 .w3l-info {
 	margin-top:22em;
@@ -105,7 +103,7 @@ ul{
 }
 .agileinfo-social-grids {
     float: left;
-	    width: 14%;
+	    width: 20%;
 }
 .agileinfo-social-grids ul {
     padding: 0;
@@ -764,7 +762,7 @@ footer{background: #2f2f2f;}
 	text-align: center;
 }
 .bottom-head h2 a {
-    font-size: 45px;
+    font-size: 38px;
     color: #fff;
 }
 span.cap{
@@ -868,6 +866,117 @@ footer p a:hover {
 	filter: alpha(opacity=0);
 }
 /*-- //to-top --*/
+.banner-dott {
+    background: url(../Content/Images/Slider/dott.png)repeat 0px 0px;
+    background-size: 2px;
+    -webkit-background-size: 2px;
+    -moz-background-size: 2px;
+    -o-background-size: 2px;
+    -ms-background-size: 2px;
+	min-height:760px;
+}
+.h3-bicolor {
+    color: #00e4c1;
+}
+.carousel-caption h3 {
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 1px 1px #000;
+    margin: 300px 0 0px 0;
+	letter-spacing:3px;
+    font-size: 60px;
+	margin-bottom:10px;
+}
+.carousel-caption h4 {
+    font-weight: 700;
+    font-size: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+	margin-bottom:20px;
+}
+.carousel-caption p {
+    font-weight: normal;
+    color: white;
+    margin: 30px 0;
+    letter-spacing: 3px;
+    font-size: 25px;
+    line-height: 35px;
+    width: 80%;
+    margin: 0 auto 30px;
+    text-transform: capitalize;
+}
+.carousel-indicators {
+    bottom: 4%;
+}.carousel-caption {
+	position: inherit;
+}
+.carousel-control {
+    width: 5%;
+}
+.carousel-control .glyphicon-menu-left, .carousel-control .glyphicon-menu-right, .carousel-control .icon-prev, .carousel-control .icon-next {
+    width: 45px;
+    height: 45px;
+    margin-top: -15px;
+    display: block;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    padding: 9px;
+	border-radius:50%;
+}
+.carousel .item{ 
+	background:url(../Content/Images/Slider/slider2.jpg)no-repeat center 0px;
+	background-size:cover;  
+	height: 760px!important;
+	
+} 
+.carousel .item1{ 
+	background:url(../Content/Images/Slider/slider3.jpg)no-repeat center 0px;
+	background-size:cover;  
+	height: 760px!important;
+	
+} 
+.carousel .item2{ 
+	background:url(../Content/Images/Slider/slider1.jpg)no-repeat center 0px;
+	background-size:cover;
+	    height: 760px!important;
+	
+} 
+.carousel .item3{ 
+	background:url(../Content/Images/Slider/slider4.jpg)no-repeat center 0px;
+	background-size:cover;
+	    height: 760px!important;
+	
+} 
+.carousel-indicators li {
+    display: inline-block;
+    width: 14px !important;
+    height: 14px !important;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #fff;
+	border-radius:0;
+  -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-menu-left, .carousel-control .glyphicon-menu-right {
+    top: 48%;
+}
+.carousel-control .icon-prev, .carousel-control .glyphicon-menu-left {
+    left: 70%;
+}
+.carousel-control .icon-next, .carousel-control .glyphicon-menu-right {
+    right: 50%;
+}
+/*-- //carousel --*/
 
 /*--responsive--*/
 @media(max-width:1920px){
@@ -955,6 +1064,27 @@ footer p a:hover {
 @media(max-width:991px){
 	.w3l-info {
     padding: 0px 60px;
+}    
+.banner-dott {
+    min-height: 500px;
+}
+.carousel-caption h3 {
+    letter-spacing: 1px;
+	font-size: 40px;
+}
+.carousel .item {
+    background-size: cover;
+    height: 500px!important;
+}
+.carousel-caption h3 {
+    margin: 196px 0 0px 0;
+}
+.carousel-caption p {
+    width: 90%;
+    margin: 0 auto 30px;
+}
+.carousel-caption h3 {
+    margin: 7em 0 0px 0;
 }
 .navbar-default .navbar-nav > li > a {
     margin: 0 .8em;
@@ -1112,7 +1242,7 @@ h1 a.navbar-brand {
 }
 @media(max-width:768px){
 	.agileinfo-social-grids {
-    width: 19%;
+    width: 20%;
 }
 .w3-header-top-right {
     width: 45%;
@@ -1222,6 +1352,12 @@ nav.navbar.navbar-default.navbar-fixed-top {
 	.agileinfo-social-grids {
     width: 22%;
 }
+.carousel-control .icon-prev, .carousel-control .glyphicon-menu-left {
+    top: 71%;
+}
+.carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-menu-left, .carousel-control .glyphicon-menu-right {
+    top: 71%;
+}
 .w3-header-top-right {
     width: 55%;
 }
@@ -1271,6 +1407,21 @@ font-size: 26px;
 .w3-header-top-right {
     width: 57%;
 }
+.carousel-caption h3 {
+    margin: 6em 0 0px 0;
+}
+.carousel-caption p {
+    width: 100%;
+    margin: 0 auto 30px;
+    font-size: 20px;
+}
+.carousel-caption h3 {
+    letter-spacing: 1px;
+    font-size: 35px;
+}
+.carousel-control .icon-next, .carousel-control .glyphicon-menu-right {
+    right: 132%;
+}
 .info {
     font-size: 13px;
 }	
@@ -1312,7 +1463,11 @@ h1 a.navbar-brand {
 }
 @media(max-width:568px){
 	.agileinfo-social-grids {
-    width: 26%;
+    width: 28%;
+}
+.carousel-caption h3 {
+    letter-spacing: 1px;
+    font-size: 35px;
 }
 .w3-header-top-right {
     width: 61%;
@@ -1348,6 +1503,15 @@ footer p {
 @media(max-width:480px){
 .w3-agile-logo {
     padding: 1em 1em;
+}
+.carousel-caption h3 {
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+.carousel-caption h3 {
+    letter-spacing: 1px;
+    font-size: 26px;
+    margin: 7em 0 0px 0;
 }
 .agileinfo-social-grids {
     width: 28%;
@@ -1450,6 +1614,9 @@ footer p {
     width: 100%;
     text-align: center;
 }	
+.carousel-control .icon-next, .carousel-control .glyphicon-menu-right {
+    right: 220%;
+}
 .w3-header-top-right-text,.agileinfo-social-grids ,.w3-header-top-right {
 	float:none;
 }
@@ -1519,6 +1686,13 @@ width: 86%;}
 	.team-agile-img {
     width: 100%;
 }
+.carousel-caption h3 {
+    line-height: 1.5em;
+}
+.carousel-caption p {
+    line-height: 22px;
+     font-size: 15px;
+}
 .contact-address h4 {
     font-size: 26px;
 }
@@ -1547,6 +1721,24 @@ footer p {
 }
 .address-contact-left p {
   letter-spacing:1px
+}
+.carousel-caption p {
+    line-height: 22px;
+    letter-spacing: 2px;
+}
+.carousel-caption h3 {
+    letter-spacing: 1px;
+    font-size: 25px;
+    margin: 7em 0 0px 0;
+}
+.carousel-caption p {
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+.carousel-caption h3 {
+letter-spacing: 1px;
+font-size: 25px;
+margin: 9em 0 0px 0;
 }
 }
 /*--//responsive--*/
