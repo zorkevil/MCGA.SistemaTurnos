@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -33,9 +33,64 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p> - My ASP.NET Application</p>
         </footer>
     </div>
+
+    <div class="footer">
+        <nav>
+            <ul class="nav-buttom">
+                <li><a class="page-scroll scroll" href="">Home</a></li>
+                <li><a class="page-scroll scroll" href="">About</a></li>
+                <li><a class="page-scroll scroll" href="">Facilities</a></li>
+                <li><a class="page-scroll scroll" href="">Laboratory</a></li>
+                <li><a class="page-scroll scroll" href="">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="colr-row col-md-6">
+                <div class="col-md-6 col-sm-6 col-xs-6  bottom-head bottm-grid">
+                    <h2><a href="">Cl&iacute;nica Alejandr&iacute;a</a></h2>
+                    <span class="cap">Embarazos de Alto Riesgo</span>
+                    <div class="clearfix"> </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 col-xs-6 copyright bottm-grid">
+                    <h3>Follow us</h3>
+                    <div class="icons">
+                        <ul>
+                            <li><a href=""><span class="fa fa-facebook"></span></a></li>
+                            <li><a href=""><span class="fa fa-twitter"></span></a></li>
+                            <li><a href=""><span class="fa fa-rss"></span></a></li>
+                            <li><a href=""><span class="fa fa-vk"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="colr-row  col-md-6">
+                <div class="col-md-6 col-sm-6 col-xs-6 one bottm-grid">
+                    <h3>About us</h3>
+                    <p> enim. Aliquam lorem ante, dapibus in,Aliquam lorem ante </p>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6 three bottm-grid">
+                    <h3>Contact</h3>
+                    <div class="addres up-out">
+                        <p><span class="fa fa-map-marker icons-left" aria-hidden="true"></span>333 Broome St New York</p>
+                        <p><span class="fa fa-phone icons-left" aria-hidden="true"></span>Call us:+9900887766</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <!-- //Copyright -->
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; @DateTime.Now.Year Cl&iacute;nica Alejandr&iacute;a - Embarazos de Alto Riesgo.  | Design by <a href="#">MCGA.SpadoniJuanIgnacio</a></p>
+    </footer>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
