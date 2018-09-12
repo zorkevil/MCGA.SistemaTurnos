@@ -10,6 +10,7 @@ namespace MCGA.UAI.WebSite.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.CarouselShow = true;
             return View();
         }
 

@@ -60,6 +60,13 @@ ul{
     background-size: cover;
     min-height: 800px;	
 }
+.banner-w2{
+    min-height: 350px !important;
+    background: url(../Content/Images/Slider/dott.png), url(../Content/Images/Page/header-top.jpg);
+    background-position: 0px 0px, center;
+    background-size: 2px, cover ;
+    background-repeat:  repeat, no-repeat ;
+}
 .w3l-info {
 	margin-top:22em;
 }
@@ -171,6 +178,12 @@ h1 a.navbar-brand {
     text-transform: uppercase;
     font-weight: 300;
     letter-spacing: 2px;
+}
+.navbar-image {
+    margin-right: 10px;
+    vertical-align: unset;
+    width: 32px;
+    display: inline !important;
 }
 nav.navbar.navbar-default.navbar-fixed-top {
 	    position: absolute;
@@ -866,7 +879,7 @@ footer p a:hover {
 }
 /*-- //to-top --*/
 .banner-dott {
-    background: url(../Content/Images/Slider/dott.png)repeat 0px 0px;
+    background: url(../Content/Images/Slider/dott.png) repeat 0px 0px;
     background-size: 2px;
     -webkit-background-size: 2px;
     -moz-background-size: 2px;
@@ -1503,6 +1516,9 @@ footer p {
 .w3-agile-logo {
     padding: 1em 1em;
 }
+.banner-w2 {
+    min-height: 220px !important;
+}
 .carousel-caption h3 {
     letter-spacing: 1px;
     font-size: 30px;
@@ -1522,7 +1538,7 @@ footer p {
     margin-top: 9em;
 }
 h1 a.navbar-brand {
-    font-size: 35px;
+    font-size: 28px;
 }
 .w3layouts_more-buttn a{padding:8px 19px;}	
 .agileits-banner-grid h4 {
@@ -1613,6 +1629,10 @@ footer p {
     width: 100%;
     text-align: center;
 }	
+.navbar-image
+{
+    width: 25px;
+}
 .carousel-control .icon-next, .carousel-control .glyphicon-menu-right {
     right: 220%;
 }
@@ -1705,6 +1725,13 @@ footer p {
 @media(max-width:320px){
 	.w3l-info h4 {
     font-size: 29px;
+}
+h1 a.navbar-brand {
+    font-size: 25px;
+}
+.navbar-image
+{
+    display: none !important;
 }
 .w3layouts_more-buttn a {
     font-size: 13px;
