@@ -184,6 +184,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\Images\Icono\favicon.png" />
+    <Content Include="Content\Images\Page\doctors.png" />
     <Content Include="Content\Images\Page\header-top.jpg" />
     <Content Include="Content\Images\Slider\dott.png" />
     <Content Include="Content\Images\Slider\slider1.jpg" />

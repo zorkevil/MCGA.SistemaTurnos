@@ -221,7 +221,7 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
 }
 .navbar-right {
     padding: 0 0em;
-	margin-top:6px;
+	margin-top: 15px;
 }
 .navbar-fixed-top {
     top: 43px;
@@ -889,6 +889,12 @@ footer p a:hover {
 }
 .h3-bicolor {
     color: #00e4c1;
+}
+.bicolor {
+    color: #00e4c1;
+}
+.doctors {
+    width: 80%;
 }
 .carousel-caption h3 {
     font-weight: 700;
