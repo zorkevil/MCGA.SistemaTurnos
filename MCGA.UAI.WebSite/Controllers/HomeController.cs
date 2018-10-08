@@ -15,7 +15,7 @@ namespace MCGA.UI.WebSite.Controllers
             ViewBag.CarouselShow = true;
             return View();
         }
-
+        
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -23,6 +23,7 @@ namespace MCGA.UI.WebSite.Controllers
             return View();
         }
 
+        [Route("Contacto", Name = HomeControllerRoute.GetContact)]
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";

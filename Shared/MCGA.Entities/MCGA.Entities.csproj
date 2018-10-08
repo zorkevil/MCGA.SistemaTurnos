@@ -49,6 +49,7 @@
     <Compile Include="TipoDia.cs">
       <DependentUpon>ModelSistemaTurnos.tt</DependentUpon>
     </Compile>
+    <Compile Include="Meta\TipoDiaMetadata.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ModelSistemaTurnos.tt">

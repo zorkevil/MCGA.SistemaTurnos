@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using MCGA.Data;
 using MCGA.Entities;
+using PagedList;
 
 namespace MCGA.UI.WebSite.Controllers
 {
@@ -16,9 +17,32 @@ namespace MCGA.UI.WebSite.Controllers
         private SistemaTurnosContext db = new SistemaTurnosContext();
 
         // GET: TipoDia
-        public ActionResult Index()
+        public ActionResult Index(string currentFilter, string searchString, int? page)
         {
-            return View(db.TipoDia.ToList());
+
+            if(searchString != null)
+            {
+                page = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+
+            ViewBag.CurrentFilter = searchString;
+            IEnumerable<TipoDia> dias = db.TipoDia;
+
+            if(!string.IsNullOrEmpty(searchString))
+            {
+                dias = dias.Where(o => o.descripcion.ToLower().Contains(searchString.ToLower()));
+            }
+
+            dias = dias.OrderBy(o => o.Id);
+
+            int pageSize = 3;
+            int pageNumber = (page ?? 1);
+
+            return View(dias.ToPagedList(pageNumber, pageSize));
         }
 
         // GET: TipoDia/Details/5

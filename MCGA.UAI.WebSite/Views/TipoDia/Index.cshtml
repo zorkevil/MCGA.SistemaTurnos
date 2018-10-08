@@ -1,5 +1,5 @@
-﻿@model IEnumerable<MCGA.Entities.TipoDia>
-
+﻿@using PagedList.Mvc
+@model PagedList.IPagedList<MCGA.Entities.TipoDia>
 @{
     ViewBag.Title = "Index";
 }
@@ -12,7 +12,7 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.descripcion)
+
         </th>
         <th></th>
     </tr>
@@ -31,3 +31,6 @@
 }
 
 </table>
+
+Página @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) de @Model.PageCount
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
