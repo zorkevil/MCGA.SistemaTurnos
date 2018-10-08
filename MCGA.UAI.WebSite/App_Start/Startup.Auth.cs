@@ -5,9 +5,9 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
-using MCGA.UAI.WebSite.Models;
+using MCGA.UI.WebSite.Models;
 
-namespace MCGA.UAI.WebSite
+namespace MCGA.UI.WebSite
 {
     public partial class Startup
     {

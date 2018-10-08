@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace MCGA.UAI.WebSite
+namespace MCGA.UI.WebSite
 {
     public class BundleConfig
     {

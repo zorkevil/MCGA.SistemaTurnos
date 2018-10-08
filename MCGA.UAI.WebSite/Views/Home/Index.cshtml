@@ -1,5 +1,24 @@
-﻿@{
+﻿@using MCGA.UI.WebSite.Constants.HomeController
+@{
     ViewBag.Title = "Clínica Alejandría - Embarazos de Alto Riesgo";
+    ViewBag.Description = "Description del Sitio - Ver SEO.";
+    ViewBag.Author = Application.Nombre;
+    ViewBag.ReferrerMode = ReferrerMode.OriginWhenCrossOrigin;
+    ViewBag.TwitterCard = new SummaryLargeImageTwitterCard("@TwitterCard");
+    ViewBag.OpenGraph = new OpenGraphBusiness(
+        ViewBag.Title,
+        new OpenGraphImage(Url.AbsoluteContent("~/content/icons/open-graph-1200x630.png")) { Height = 630, Type = ContentType.Png, Width = 1200 },
+        new OpenGraphContactData(Application.Direccion, Application.Localidad, Application.CodigoPostal, Application.Pais)
+        {
+            Email = Application.Email,
+            Phone = Application.Telefono1,
+            Website = Url.AbsoluteRouteUrl(HomeControllerRoute.GetIndex)
+        },
+        new OpenGraphLocation(Application.Latitud, Application.Longitud))
+    {
+        Determiner = OpenGraphDeterminer.Blank,
+        SiteName = Application.Nombre
+    };
 }
 
 <div class="agileits-banner-grids text-center">

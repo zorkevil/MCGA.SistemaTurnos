@@ -4,6 +4,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title</title>
+    <meta name="description" content="@ViewBag.Description">
+    
+    @if (ViewBag.Author != null)
+    {
+        <meta name="author" content="@ViewBag.Author"> }
+    @if (ViewBag.TwitterCard != null)
+    {
+        @Html.TwitterCard((TwitterCard)ViewBag.TwitterCard);
+    }
+    @if (ViewBag.OpenGraph != null)
+    {
+        @Html.OpenGraph((OpenGraphMetadata)ViewBag.OpenGraph);
+    }
+    @if (ViewBag.ReferrerMode != null)
+    {
+        @Html.ReferrerMeta((ReferrerMode)ViewBag.ReferrerMode)
+    }
+
     <link rel="icon" href="~/Content/Images/Icono/favicon.png">
 
     @if (Context.IsDebuggingEnabled)

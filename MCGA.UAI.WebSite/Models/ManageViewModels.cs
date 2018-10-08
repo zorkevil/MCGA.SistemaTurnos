@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security;
 
-namespace MCGA.UAI.WebSite.Models
+namespace MCGA.UI.WebSite.Models
 {
     public class IndexViewModel
     {

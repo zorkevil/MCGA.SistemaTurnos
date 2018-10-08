@@ -10,9 +10,9 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
-using MCGA.UAI.WebSite.Models;
+using MCGA.UI.WebSite.Models;
 
-namespace MCGA.UAI.WebSite
+namespace MCGA.UI.WebSite
 {
     public class EmailService : IIdentityMessageService
     {

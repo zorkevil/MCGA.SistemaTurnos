@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace MCGA.UAI.WebSite
+namespace MCGA.UI.WebSite
 {
     public class MvcApplication : System.Web.HttpApplication
     {

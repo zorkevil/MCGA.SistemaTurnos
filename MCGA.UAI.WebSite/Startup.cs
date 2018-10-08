@@ -1,8 +1,8 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(MCGA.UAI.WebSite.Startup))]
-namespace MCGA.UAI.WebSite
+[assembly: OwinStartupAttribute(typeof(MCGA.UI.WebSite.Startup))]
+namespace MCGA.UI.WebSite
 {
     public partial class Startup
     {

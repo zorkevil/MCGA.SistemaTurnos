@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="MCGA.UAI.WebSite.MvcApplication" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="MCGA.UI.WebSite.MvcApplication" Language="C#" %>
