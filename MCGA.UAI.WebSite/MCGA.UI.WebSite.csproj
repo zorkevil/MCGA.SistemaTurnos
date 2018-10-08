@@ -170,6 +170,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\TipoDiaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -247,6 +248,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\TipoDia\Create.cshtml" />
+    <Content Include="Views\TipoDia\Delete.cshtml" />
+    <Content Include="Views\TipoDia\Details.cshtml" />
+    <Content Include="Views\TipoDia\Edit.cshtml" />
+    <Content Include="Views\TipoDia\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -258,6 +264,20 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Data\MCGA.Data\MCGA.Data.csproj">
+      <Project>{21a72d4e-4480-4453-a9a4-e2458b84e7f7}</Project>
+      <Name>MCGA.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Presentation\MCGA.UI.Process\MCGA.UI.Process.csproj">
+      <Project>{8dce9c31-1356-475e-bb8e-fe16554b4be0}</Project>
+      <Name>MCGA.UI.Process</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shared\MCGA.Entities\MCGA.Entities.csproj">
+      <Project>{9cc9e395-4e72-47fc-9f03-c1ca9e69261d}</Project>
+      <Name>MCGA.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
